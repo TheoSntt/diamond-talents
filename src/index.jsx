@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Survey from './pages/Survey'
@@ -18,8 +18,8 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
 `
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
   <React.StrictMode>
     <Router>
       <GlobalStyle />
@@ -33,5 +33,4 @@ ReactDOM.render(
       </Routes>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root'),
 )
