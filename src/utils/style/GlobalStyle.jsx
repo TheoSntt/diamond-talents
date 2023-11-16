@@ -1,3 +1,4 @@
+import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import { useContext } from 'react'
 import { ThemeContext } from '../context'

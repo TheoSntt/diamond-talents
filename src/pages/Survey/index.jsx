@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -93,14 +94,14 @@ function Survey() {
       <ReplyWrapper>
         <ReplyBox
           onClick={() => saveReply(true)}
-          isSelected={answers[questionNumber] === true}
+          $isSelected={answers[questionNumber] === true}
           theme={theme}
         >
           Oui
         </ReplyBox>
         <ReplyBox
           onClick={() => saveReply(false)}
-          isSelected={answers[questionNumber] === false}
+          $isSelected={answers[questionNumber] === false}
           theme={theme}
         >
           Non

@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext } from 'react'
 import { SurveyContext } from '../../utils/context'
 import styled from 'styled-components'
